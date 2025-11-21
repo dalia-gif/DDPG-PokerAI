@@ -9,16 +9,16 @@ This project develops an adaptive poker agent for Texas Hold'em using a hybrid a
 
 RL_Poker_Agent  
 ├── README.md  
-├── train.py                      - Main script for running DDPG experiments  
-├── config.yaml                   - Conda environment configuration  
+├── train.py  
+├── config.yaml  
 ├── datasets/  
-│   ├── parsed_poker_games.pt     - Processed human gameplay (Torch tensor)  
-│   └── Export_hand_histories.txt - Raw hand histories  
+│   ├── parsed_poker_games.pt  
+│   └── Export_hand_histories.txt  
 ├── utils/  
-│   ├── agents.py                 - DDPG agent and training loop  
-│   ├── model.py                  - Actor and critic network definitions  
-│   ├── replaybuffer.py           - Replay buffer for self play and human data  
-│   └── load_human.py             - Parsing utilities for raw logs  
+│   ├── agents.py  
+│   ├── model.py  
+│   ├── replaybuffer.py  
+│   └── load_human.py  
 └── logs/  
     ├── run_baseline_no_human_data/  
     │   ├── rewards_plot.png  
@@ -26,6 +26,7 @@ RL_Poker_Agent
     └── run_human_ratio0-8_replacable/  
         ├── rewards_plot.png  
         └── training_output.log  
+
 
 ### Environment Setup
 
