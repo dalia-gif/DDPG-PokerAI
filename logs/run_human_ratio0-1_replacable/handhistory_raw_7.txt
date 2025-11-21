@@ -1,0 +1,48 @@
+PokerStars Hand #11981778: Hold'em No Limit ($2.50/$5.00 USD) - 2024/12/11 16:11:30 ET
+Table 'Wempe III' 6-max Seat #2 is the button
+Seat 1: player_9 ($200.00 in chips)
+Seat 2: player_2 ($115.00 in chips)
+Seat 3: player_1 ($235.00 in chips)
+Seat 4: player_7 ($230.00 in chips)
+Seat 5: player_4 ($190.00 in chips)
+Seat 6: player_3 ($240.00 in chips)
+Seat 7: player_6 ($110.00 in chips)
+Seat 8: player_8 ($180.00 in chips)
+Seat 9: player_5 ($205.00 in chips)
+player_9: posts small blind 2.50
+player_2: posts big blind 5.00
+*** HOLE CARDS ***
+Dealt to player_1 [9c Th]
+player_1: raises 2.50 to 7.50
+player_7: raises 2.50 to 10.00
+player_4: raises 2.50 to 12.50
+player_3: folds
+player_6: raises 2.50 to 15.00
+player_8: raises 2.50 to 17.50
+player_5: folds
+player_9: raises 2.50 to 20.00
+player_2: raises 2.50 to 22.50
+player_1: raises 2.50 to 25.00
+player_7: raises 2.50 to 27.50
+player_4: folds
+player_6: raises 2.50 to 30.00
+player_8: raises 2.50 to 32.50
+player_9: raises 2.50 to 35.00
+player_2: raises 2.50 to 37.50
+player_1: folds
+player_7: raises 2.50 to 40.00
+player_6: raises 2.50 to 42.50
+player_8: raises 2.50 to 45.00
+player_9: raises 2.50 to 47.50
+player_2: raises 2.50 to 50.00
+player_7: raises 2.50 to 52.50
+player_6: raises 2.50 to 55.00
+player_8: folds
+player_9: folds
+player_2: raises 2.50 to 57.50
+player_7: folds
+player_6: folds
+Uncalled bet (2.50) returned to player_2
+player_2 collected 292.50 from pot
+*** SUMMARY ***
+Total pot $292.50 | Rake $0.00
