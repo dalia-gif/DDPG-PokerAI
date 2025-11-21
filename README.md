@@ -35,9 +35,16 @@ RL_Poker_Agent
 ### Environment Setup
 
 ```bash
-# Create the Conda environment
 conda env create -f config.yaml
-
-# Activate the environment
 conda activate rl
+```
+
+### Neuron Poker Environment
+
+This project's reinforcement learning experiments are conducted within a Texas Hold'em environment compatible with the Gym interface.
+
+The core game logic, observation space, and action space are directly based on the Neuron Poker Repository. This environment provides the necessary standardized, multi-player setting to train the DDPG agent and investigate complex strategies.
+
+```bash
+pip install git+https://github.com/dickreuter/neuron_poker.git
 ```
