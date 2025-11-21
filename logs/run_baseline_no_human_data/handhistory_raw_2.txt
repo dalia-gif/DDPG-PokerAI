@@ -1,0 +1,27 @@
+PokerStars Hand #27625678: Hold'em No Limit ($2.50/$5.00 USD) - 2024/12/11 0:11:37 ET
+Table 'Wempe III' 6-max Seat #2 is the button
+Seat 1: player_9 ($110.00 in chips)
+Seat 2: player_5 ($60.00 in chips)
+Seat 3: player_8 ($115.00 in chips)
+Seat 4: player_4 ($150.00 in chips)
+Seat 5: player_2 ($235.00 in chips)
+Seat 6: player_6 ($165.00 in chips)
+Seat 7: player_3 ($120.00 in chips)
+Seat 8: player_7 ($215.00 in chips)
+Seat 9: player_1 ($145.00 in chips)
+player_9: posts small blind 2.50
+player_5: posts big blind 5.00
+*** HOLE CARDS ***
+Dealt to player_1 [9d 7h]
+player_8: folds
+player_4: folds
+player_2: folds
+player_6: folds
+player_3: folds
+player_7: folds
+player_1: folds
+player_9: folds
+Uncalled bet (2.50) returned to player_5
+player_5 collected 5.00 from pot
+*** SUMMARY ***
+Total pot $5.00 | Rake $0.00
