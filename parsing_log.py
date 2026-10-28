@@ -93,38 +93,91 @@
 # Player VegetablesArentYummy does not show cards.Bets: 1. Collects: 0. Loses: 1.
 # Game ended at: 2016/11/29 15:26:36
 
-
+ 
 def split_log(log):
-    # split log by "Game ended at" keyword
+    """
+    Split a poker log containing multiple games into individual game logs.
+
+    Each game is separated by the keyword "Game ended at".
+
+    Args:
+        log (str): The complete text of a poker log file.
+
+    Returns:
+        list[str]: A list containing the separated game log segments.
+    """
+    # Split the log at the end-of-game marker.
     logs = log.split("Game ended at")
     return logs
 
 
 def parsing_log(log):
-    # split log by "\n"
+    """
+    Extract the game ID, player names, and actions from a single game log.
+
+    The parser assumes a fixed structure for the log:
+    - The game ID is located on the second line.
+    - Player information occupies lines 4 through 12.
+    - Actions are listed from line 13 to the end, excluding the last line.
+
+    Args:
+        log (str): The text corresponding to a single poker game.
+
+    Returns:
+        tuple: A tuple containing:
+            - game_id (str): The identifier of the game.
+            - player_list (list[str]): The names of the players.
+            - action_list (list[list[str]]): The parsed actions, represented
+              as lists of strings.
+    """
+    # Split the game log into individual lines.
     log = log.split("\n")
-    # get game id
+
+    # Extract the game ID from the second line.
     game_id = log[1].split(" ")[2]
-    # get player list
+
+    # Extract the names of the players from the player information lines.
     player_list = []
     for i in range(3, 12):
         player = log[i].split(":")[1].split(" ")[1]
         player_list.append(player)
-    # get action list
+
+    # Extract the actions recorded in the remaining lines.
     action_list = []
     for i in range(12, len(log) - 1):
         action = log[i].split(" ")[1:]
         action_list.append(action)
+
     return game_id, player_list, action_list
 
 
 def file_processing(file):
+    """
+    Read a poker log file and interactively inspect its individual games.
+
+    For each game, print the game ID, player names, and parsed actions.
+    Ask whether to continue processing the next game, stopping if the
+    user enters 'n'.
+
+    Args:
+        file (str): Path to the poker log file.
+
+    Returns:
+        int: Returns 0 after processing or stopping.
+    """
+    # Read the complete log file.
     with open(file, "r") as f:
         log = f.read()
+
+    # Separate the file into individual game logs.
     logs = split_log(log)
+
+    # Parse and display each game, allowing manual inspection.
     for log in logs:
         game_id, player_list, action_list = parsing_log(log)
         print(game_id, player_list, action_list)
+
+        # Ask whether to continue with the next game.
         c = input("Continue? (y/n): ")
         if c.lower() == "n":
             break
